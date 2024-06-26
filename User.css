@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+}
+
+#container_1{
+    margin-bottom: 5px;
+    padding: 15px;
+    border-radius: 8px;
+}
+#ques_no{
+    padding: 5px 0;
+    font-weight: 550;
+}
+#questions{
+    margin: 10px 0;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+}
+
+label {
+    margin: 10px;
+}
+.marks {
+    font-size: x-large;
+    font-weight: 600;
+}
+.time{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    font-size: x-large;
+    font-weight: medium;
+    
+    
+}

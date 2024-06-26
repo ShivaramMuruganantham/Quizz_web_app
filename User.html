@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="User.css">
+
+</head>
+<body>
+    <div class="relative max-w-[800px] mx-auto p-5 rounded-lg shadow-md shadow-black bg-white overflow-hidden">
+        <h1 class="p-4 text-center text-4xl font-bold">Welcome to User page</h1>
+        <h3 class="p-2 text-center text-xl font-bold">Complete The Following Questions</h3>
+        <div id="container" class="my-5 p-5">
+            
+        </div>
+        <div class="text-center">
+            <button type="button" onclick="saveData()" class="border py-2.5 px-14 font-semibold rounded-lg bg-blue-400 text-white hover:bg-blue-500">Submit</button>
+        </div>
+        <div class="time" id="time_bg">
+            <p><i class="icon ion-md-alarm text-white text-3xl font-extrabold "></i>  <time id="time"></time></p>
+            
+        </div>
+    </div>
+
+    <script src="User.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#qus_mrk {
+    text-shadow: 0px 0px 10px rgb(0, 179, 255);
+}
+
+.btn_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 30px;
+    height: 55px;
+    width: 150px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.btn{
+    margin-top: 6px;
+    box-shadow: 1px 1px 2px #f3f0f0;
+    animation: slide 7s linear infinite;
+}
+.btn_div:hover .btn{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0%{transform: translateY(0%);}
+    30%{transform: translateY(-180%);}
+    60%{transform: translateY(-180%);}
+    80%{transform: translateY(0%);}
+    100%{transform: translateY(0%);}
+}
+
+.font-jacques{
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}

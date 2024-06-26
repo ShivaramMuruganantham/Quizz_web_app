@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-[800px] mx-auto p-5 rounded-lg shadow-md shadow-black bg-white" >
+        
+        <h1 class="p-4 text-center text-4xl font-bold">Welcome to Admin page</h1>
+        <h3 class="p-2 text-center text-xl font-bold">You can make MCQ type Question Paper here</h3>
+
+        <form action="" class="my-5">
+
+            <label for="num">Qus no:</label><br>
+            <input type="tel" name="num" id="qus_no" class="my-1 p-2 border-[1.5px] rounded-md w-full"><br>
+                
+            <label for="Question">Questions:</label><br>
+            <input type="text" name="Question" id="question" class="my-1 p-2 border-[1.5px] rounded-md w-full"><br>
+                
+            <div class="my-2 p-2 font-semibold text-center">
+                <span class="pb-1 border-b-2 border-black">Options</span><br>
+            </div>
+                
+            <label for="opt_1">1:</label><br>
+            <input type="text" name="opt_1" id="opt_1" class="my-1 p-2 border-[1.5px] rounded-md w-full"><br>
+                
+            <label for="opt_2">2:</label><br>
+            <input type="text" name="opt_2" id="opt_2" class="my-1 p-2 border-[1.5px] rounded-md w-full"><br>
+
+            <label for="opt_3">3:</label><br>
+            <input type="text" name="opt_3" id="opt_3" class="my-1 p-2 border-[1.5px] rounded-md w-full"><br>
+                
+            <label for="opt_4">4:</label><br>
+            <input type="text" name="opt_4" id="opt_4" class="mt-1 mb-5 p-2 border-[1.5px] rounded-md w-full"><br>
+
+            <label for="ans">Answer</label><br>
+            <input type="text" name="ans" id="ans" class="my-2 p-2 border-[1.5px] rounded-md w-full"><br>
+
+            <div class="text-center mt-4 mb-2">
+                <button type="button" class="border font-semibold py-2 px-10 bg-yellow-400 text-white rounded-lg hover:bg-yellow-600" onclick="click_hand()">submit</button>
+            </div>
+            
+        </form>
+        <div id="demo0"></div>
+        <div id="demo">
+            <div id="demo1">
+            </div>
+        </div>
+        <div id="demo2" class="hidden mt-4 mb-2">
+            <button id="btn" type="button" class=" py-2 px-16 text-xl rounded-lg text-white bg-[#28a745] hover:bg-[#218838]">Verify</button>
+        </div>
+    </div>
+    <div class="max-w-[800px] mx-auto my-5 p-5 rounded-lg shadow-md shadow-black bg-white">
+        <label for="time">Time Limit <small>(in minutes)</small></label><br>
+        <input type="tel" name="time" id="time" class="my-2 p-2 border-[1.5px] rounded-md w-full"><br>
+        
+        <div class="text-center mt-4 mb-2">
+            <button type="button" class="border font-semibold py-2 px-10 bg-red-400 text-white rounded-lg hover:bg-red-600" onclick="setTime()">Set Time</button>
+        </div>
+    </div>
+    
+
+    <script src="Admin.js"></script>
+</body>
+</html>
